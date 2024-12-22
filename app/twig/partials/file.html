@@ -99,7 +99,8 @@
   {% if date is not empty %}<h6 class="date"><time itemprop="dateCreated" datetime="{{ date|date('c') }}">{{ date|date('d F Y') }}</time></h6>{% endif %}
 
   {# close (back) button #}
-	<a href="{{ (page.permalink|dirname|replace({' ':'_'}) ~ '/')|e|setpath(rootpath)|replace({'/.':'/'}) }}" class="file-back"></a>
+	{#<a href="{{ (page.permalink|dirname|replace({' ':'_'}) ~ '/')|e|setpath(rootpath)|replace({'/.':'/'}) }}" class="file-back"></a>#}
+	<a href="../" class="file-back"></a>
 
 	{# Image element #}
 	<div class="gallery">
